@@ -8,6 +8,6 @@ Each project is contained in its own folder at the root of this repository.
 ## Technical Stack
 Python | R | SQL | OR-Tools | Pyomo | pandas | numpy | matplotlib | seaborn | plotly
 
-## Note
-Some projects in this repository are experimental and contribute to my continuous improvement in prescriptive analytics and decision-support modeling.
+## Notes on Project Maturity
+This repository serves both as a portfolio and as a continuous development environment. Some projects are intentionally scoped to explore specific optimization methods, decision frameworks, or scenario analysis techniques. Insights and improvements from these projects are progressively consolidated into a shared prescriptive framework used across more comprehensive end-to-end decision-making projects.
 
