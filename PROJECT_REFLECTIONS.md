@@ -23,3 +23,17 @@ The purpose is to document my learning progression transparently and ensure that
 For this prescriptive analytics project, I realized I need to better justify the use of mathematical tools to ensure robust results. Prescriptive modeling is demanding because it directly drives decision-making, so every choice of method and parameter should be clearly explained and defensible.
 
 ---
+
+### Project 2
+
+**Project Name**: Food Distribution Optimization
+
+**Month**: April 2026
+
+**Link**: [Food Distribution Optimization](https://github.com/jfjutras07/Prescriptive-Analytics/tree/main/Food_Distribution_Optimization)
+
+**Weakness identified**:
+
+The current model is technically sound, but I need to bridge the gap between complex optimization and field-level decision-making. Future iterations will focus on intuitive data storytelling and synthetic visuals to translate high-dimensional results into clear, accessible insights that empower non-technical stakeholders to make rapid and defensible humanitarian choices.
+
+---
