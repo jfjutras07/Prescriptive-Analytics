@@ -6,7 +6,7 @@ This repository contains prescriptive analytics projects focused on decision-mak
 
 | Project | Analytical Focus | Domain Context | Key Analytical Contributions |
 |---|---|---|---|
-| [Food Distribution Optimization](https://github.com/jfjutras07/Prescriptive-Analytics/tree/main/Food_Distribution_Optimization) | Humanitarian resource allocation and risk-resilient intervention planning | International development & humanitarian analytics | Optimization-based allocation modeling, scenario analysis, Monte Carlo simulation, and impact-focused decision support under budget and uncertainty constraints |
+| [Food Distribution Optimization](https://github.com/jfjutras07/Prescriptive-Analytics/tree/main/Food_Distribution_Optimization) | Humanitarian resource allocation and risk-resilient intervention planning | International development and humanitarian analytics | Optimization-based allocation modeling, scenario analysis, Monte Carlo simulation, and impact-focused decision support under budget and uncertainty constraints |
 | [Strategic Portfolio and Operations Optimization](https://github.com/jfjutras07/Prescriptive-Analytics/tree/main/Integrated_Decision_Support_System_(IDSS)) | Portfolio selection, operational planning, and organizational resilience optimization | Strategic management and operations analytics | Linear programming, dynamic project phasing, capacity analysis, risk assessment, and stochastic simulation to support robust portfolio decisions |
 
 ## Organization
