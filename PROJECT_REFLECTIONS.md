@@ -44,7 +44,7 @@ The current model is technically sound, but I need to bridge the gap between com
 
 **Month**: July 2026
 
-**Link**: [Hospital Patient Flow Demand Analysis](https://github.com/jfjutras07/Prescriptive-Analytics/tree/main/Hospital_Patient_Flow_Demand_Analysis)
+**Link**: [Hospital Patient Flow Demand Analysis](https://github.com/jfjutras07/Prescriptive-Analytics/tree/main/Hospital_Patient_Flow_Analysis)
 
 **Weakness identified**:
 
