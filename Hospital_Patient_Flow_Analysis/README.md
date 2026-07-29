@@ -19,11 +19,11 @@ By combining descriptive analytics, predictive modeling, prescriptive optimizati
 
 ---
 
-# Data Architecture & Preprocessing
+### Data Architecture & Preprocessing
 
 The project uses healthcare operational datasets containing patient demand, forecasting outputs, workforce structure, scheduling information, and workforce costs.
 
-## Integrated Data Components
+### Integrated Data Components
 
 **Patient Demand Data**
 
@@ -44,7 +44,7 @@ The project uses healthcare operational datasets containing patient demand, fore
 - Internal labor costs
 - Outsourced nursing cost assumptions
 
-## Data Preparation
+### Data Preparation
 
 - Dataset validation and structural inspection
 - Operational table extraction
@@ -54,52 +54,56 @@ The project uses healthcare operational datasets containing patient demand, fore
 
 ---
 
-# Notebook 1 – Hospital Operational Data Analysis
+### Notebook 1 – Hospital Operational Data Analysis
 
-## Objective
+### Objective
 
 Understand hospital operational characteristics and identify relevant indicators influencing patient flow and workforce requirements.
 
-## Methods
+### Methods
 
 - Exploratory data analysis
 - Dataset profiling
 - Operational indicator assessment
 - Patient flow characterization
 
-## Key Contribution
+<img width="1073" height="668" alt="image" src="https://github.com/user-attachments/assets/0eb1ee8f-987f-409f-91c4-84e49548c6e0" />
+
+### Key Contribution
 
 Provides the analytical foundation required to understand hospital activity patterns before forecasting and workforce optimization.
 
 ---
 
-# Notebook 2 – Patient Demand Forecasting
+### Notebook 2 – Operational Data Engineering & Demand Indicator Construction
 
-## Objective
+### Objective
 
-Develop forecasting models to evaluate future patient demand patterns and assess forecasting readiness.
+Transform raw hospital encounter data into structured operational datasets by integrating synthetic workforce assumptions, temporal characteristics, and demand indicators required for subsequent analytical modeling.
 
-## Methods
+### Methods
 
-- Time series preparation
-- Demand trend analysis
-- Forecast validation
-- Forecast performance evaluation
-- Forecast uncertainty assessment
+- Patient-level operational feature engineering
+- Temporal and shift-based demand characterization
+- Department-level and workload indicator construction
+- Operational dataset validation
+- Data limitation assessment and modeling scope definition
 
-## Key Contribution
+<img width="1030" height="278" alt="image" src="https://github.com/user-attachments/assets/707e747d-30b2-4743-9704-7a9bc2c41124" />
 
-Provides predictive insights required to anticipate future operational demand and support workforce planning assumptions.
+### Key Contribution
+
+Provides a validated operational data foundation by converting patient encounters into structured demand indicators that support subsequent time series analysis, workforce optimization, and strategic decision-making models.
 
 ---
 
-# Notebook 3 – Patient Flow Demand Analysis
+### Notebook 3 – Patient Flow Demand Analysis
 
-## Objective
+### Objective
 
 Analyze temporal demand behavior and validate the characteristics of hospital patient flow before applying workforce optimization methods.
 
-## Methods
+### Methods
 
 - Time series statistical analysis
 - Demand frequency validation
@@ -108,21 +112,23 @@ Analyze temporal demand behavior and validate the characteristics of hospital pa
 - Autocorrelation evaluation
 - Temporal pattern exploration
 
-## Key Findings
+### Key Findings
 
 - Historical demand series showed stable operational behavior
 - No major structural issues were identified in the analyzed demand patterns
 - Demand characteristics supported the use of forecasting outputs as workforce planning inputs
 
-## Decision Support Contribution
+<img width="1055" height="576" alt="image" src="https://github.com/user-attachments/assets/5273ad9b-e46c-4552-b2f6-2162d162f60d" />
+
+### Decision Support Contribution
 
 The notebook establishes the relationship between patient demand dynamics and workforce capacity requirements, ensuring that optimization decisions are based on validated operational patterns.
 
 ---
 
-# Notebook 4 – Nursing Workforce Planning Optimization
+### Notebook 4 – Nursing Workforce Planning Optimization
 
-## Workforce Optimization Model
+### Workforce Optimization Model
 
 A Mixed Integer Linear Programming (MILP) model is developed to determine the optimal allocation of additional nurses across hospital departments.
 
@@ -134,13 +140,13 @@ The model considers:
 - Outsourced nursing labor alternatives
 - Annual workforce budget constraints
 
-## Optimization Objective
+### Optimization Objective
 
 Maximize workforce cost savings by replacing outsourced nursing capacity with internal hiring while maintaining minimum operational coverage requirements.
 
 ---
 
-## Baseline Optimization Results
+### Baseline Optimization Results
 
 The optimization model identifies the most cost-effective workforce allocation strategy.
 
@@ -151,15 +157,15 @@ The optimization model identifies the most cost-effective workforce allocation s
 - All staffing constraints satisfied
 - Workforce expansion concentrated in departments where internal hiring provides the highest economic value
 
-## Key Insight
+### Key Insight
 
 The optimization demonstrates that workforce investment decisions should prioritize departments where additional internal capacity generates the highest operational and financial benefits.
 
 ---
 
-# Uncertainty & Sensitivity Analysis
+### Uncertainty & Sensitivity Analysis
 
-## Monte Carlo Demand Simulation
+### Monte Carlo Demand Simulation
 
 A Monte Carlo simulation evaluates patient demand uncertainty using historical demand variability.
 
@@ -175,9 +181,11 @@ A Monte Carlo simulation evaluates patient demand uncertainty using historical d
 - Demand uncertainty represents an important factor for workforce resilience
 - Simulation results provide a foundation for future stochastic optimization approaches
 
+<img width="1058" height="667" alt="image" src="https://github.com/user-attachments/assets/3ccf1143-1365-40d0-9580-10d0d7025777" />
+
 ---
 
-## Budget Sensitivity Analysis
+### Budget Sensitivity Analysis
 
 Multiple budget scenarios are evaluated to measure the impact of financial capacity on workforce decisions.
 
@@ -196,7 +204,7 @@ Multiple budget scenarios are evaluated to measure the impact of financial capac
 
 ---
 
-## Nursing Coverage Sensitivity Analysis
+### Nursing Coverage Sensitivity Analysis
 
 The model evaluates different minimum staffing coverage assumptions.
 
@@ -212,7 +220,7 @@ Higher coverage requirements increase operational constraints and reduce optimiz
 
 ---
 
-## Outsourced Labor Cost Sensitivity Analysis
+### Outsourced Labor Cost Sensitivity Analysis
 
 The impact of external nursing labor cost variations is evaluated.
 
@@ -228,9 +236,9 @@ External labor cost changes primarily affect the financial value of internal hir
 
 ---
 
-# Notebook 5 – Multi-Criteria Decision Analysis for Strategic Workforce Planning
+### Notebook 5 – Multi-Criteria Decision Analysis for Strategic Workforce Planning
 
-## Decision Context
+### Decision Context
 
 Optimization identifies mathematically efficient workforce solutions, but healthcare decisions require consideration of broader strategic priorities.
 
@@ -244,7 +252,7 @@ The MCDA framework evaluates workforce alternatives according to:
 
 ---
 
-# Stakeholder-Based Criteria Weighting
+### Stakeholder-Based Criteria Weighting
 
 A stakeholder workshop is simulated using six hospital profiles:
 
@@ -257,9 +265,11 @@ A stakeholder workshop is simulated using six hospital profiles:
 
 Stakeholder preferences are aggregated using the **Analytic Hierarchy Process (AHP)**.
 
+<img width="1050" height="638" alt="image" src="https://github.com/user-attachments/assets/fec449ae-64da-4c26-b550-586e7ca55655" />
+
 ---
 
-# AHP Criteria Weighting
+### AHP Criteria Weighting
 
 Pairwise comparisons are performed using the Saaty fundamental scale.
 
@@ -273,13 +283,13 @@ The aggregated stakeholder judgments generate the following criteria weights:
 | Financial Efficiency | 0.16 |
 | Implementation Feasibility | 0.08 |
 
-## Interpretation
+### Interpretation
 
 Stakeholders prioritize patient coverage and operational resilience over purely financial optimization.
 
 ---
 
-# AHP Consistency Assessment
+### AHP Consistency Assessment
 
 The aggregated comparison matrix is evaluated using the Consistency Ratio (CR).
 
@@ -293,7 +303,7 @@ The stakeholder judgments demonstrate acceptable consistency, confirming that th
 
 ---
 
-# TOPSIS Strategic Scenario Evaluation
+### TOPSIS Strategic Scenario Evaluation
 
 *(Section under development)*
 
@@ -309,16 +319,16 @@ Scenarios will be evaluated using:
 
 ---
 
-# Strategic Insights
+### Strategic Insights
 
-## Workforce Planning Trade-offs
+### Workforce Planning Trade-offs
 
 **Efficiency vs Operational Resilience**
 
 - Cost-minimizing solutions may not always represent the most strategically desirable workforce strategy.
 - Healthcare organizations must balance financial efficiency with patient safety and operational continuity.
 
-## Optimization + MCDA Integration
+### Optimization + MCDA Integration
 
 - MILP identifies mathematically efficient and feasible workforce allocations.
 - MCDA incorporates organizational preferences and strategic priorities.
@@ -327,7 +337,7 @@ Together, these methods provide a more complete decision-support framework.
 
 ---
 
-# Actionable Recommendations
+### Actionable Recommendations
 
 - Integrate forecasting outputs directly into future workforce optimization models.
 - Combine mathematical optimization with stakeholder-based decision frameworks.
@@ -337,29 +347,29 @@ Together, these methods provide a more complete decision-support framework.
 
 ---
 
-# Project Structure
+### Project Structure
 
-## Notebook 1 – Hospital Operational Data Analysis
+### Notebook 1 – Hospital Operational Data Analysis
 
 - Dataset exploration
 - Patient flow analysis
 - Operational indicator assessment
 
-## Notebook 2 – Patient Demand Forecasting
+### Notebook 2 – Operational Data Engineering & Demand Indicator Construction
 
-- Time series preparation
-- Forecasting models
-- Forecast validation
-- Demand uncertainty evaluation
+- Patient-level operational feature engineering
+- Temporal and shift-based demand characterization
+- Department-level and workload indicator construction
+- Operational dataset validation and modeling scope assessment
 
-## Notebook 3 – Patient Flow Demand Analysis
+### Notebook 3 – Patient Flow Demand Analysis
 
 - Demand pattern analysis
 - Time series validation
 - Stationarity and autocorrelation analysis
 - Operational demand characterization
 
-## Notebook 4 – Nursing Workforce Planning Optimization
+### Notebook 4 – Nursing Workforce Planning Optimization
 
 - Workforce capacity modeling
 - MILP optimization
@@ -367,7 +377,7 @@ Together, these methods provide a more complete decision-support framework.
 - Monte Carlo uncertainty analysis
 - Sensitivity analysis
 
-## Notebook 5 – Multi-Criteria Decision Analysis
+### Notebook 5 – Multi-Criteria Decision Analysis
 
 - Stakeholder criteria definition
 - AHP weighting methodology
@@ -376,31 +386,31 @@ Together, these methods provide a more complete decision-support framework.
 
 ---
 
-# Key Takeaways
+### Key Takeaways
 
-## Operational Analytics
+### Operational Analytics
 
 Transforms hospital demand information into structured workforce planning inputs.
 
-## Predictive Analytics
+### Predictive Analytics
 
 Time series forecasting provides insights into future patient demand and operational uncertainty.
 
-## Optimization
+### Optimization
 
 Identifies cost-effective nursing allocation strategies under workforce and budget constraints.
 
-## Risk Assessment
+### Risk Assessment
 
 Evaluates how uncertainty and assumptions influence workforce decisions.
 
-## Strategic Decision Support
+### Strategic Decision Support
 
 Combines optimization results with stakeholder preferences to support complex healthcare planning decisions.
 
 ---
 
-# Conclusion
+### Conclusion
 
 This project demonstrates how healthcare workforce planning can evolve from descriptive analytics toward predictive, prescriptive, and strategic decision-making.
 
