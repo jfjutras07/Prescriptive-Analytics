@@ -183,8 +183,6 @@ A Monte Carlo simulation evaluates patient demand uncertainty using historical d
 
 <img width="1058" height="667" alt="image" src="https://github.com/user-attachments/assets/3ccf1143-1365-40d0-9580-10d0d7025777" />
 
----
-
 ### Budget Sensitivity Analysis
 
 Multiple budget scenarios are evaluated to measure the impact of financial capacity on workforce decisions.
@@ -202,8 +200,6 @@ Multiple budget scenarios are evaluated to measure the impact of financial capac
 - Increased investment generates additional workforce savings
 - Budget availability directly influences achievable operational improvements
 
----
-
 ### Nursing Coverage Sensitivity Analysis
 
 The model evaluates different minimum staffing coverage assumptions.
@@ -217,8 +213,6 @@ The model evaluates different minimum staffing coverage assumptions.
 **Key Insight:**
 
 Higher coverage requirements increase operational constraints and reduce optimization flexibility by limiting purely cost-driven workforce allocation.
-
----
 
 ### Outsourced Labor Cost Sensitivity Analysis
 
@@ -265,10 +259,6 @@ A stakeholder workshop is simulated using six hospital profiles:
 
 Stakeholder preferences are aggregated using the **Analytic Hierarchy Process (AHP)**.
 
-<img width="1050" height="638" alt="image" src="https://github.com/user-attachments/assets/fec449ae-64da-4c26-b550-586e7ca55655" />
-
----
-
 ### AHP Criteria Weighting
 
 Pairwise comparisons are performed using the Saaty fundamental scale.
@@ -283,11 +273,9 @@ The aggregated stakeholder judgments generate the following criteria weights:
 | Financial Efficiency | 0.16 |
 | Implementation Feasibility | 0.08 |
 
-### Interpretation
+**Interpretation**
 
 Stakeholders prioritize patient coverage and operational resilience over purely financial optimization.
-
----
 
 ### AHP Consistency Assessment
 
@@ -301,21 +289,26 @@ The aggregated comparison matrix is evaluated using the Consistency Ratio (CR).
 
 The stakeholder judgments demonstrate acceptable consistency, confirming that the resulting criteria weights are sufficiently reliable for subsequent MCDA evaluation.
 
----
-
 ### TOPSIS Strategic Scenario Evaluation
-
-*(Section under development)*
 
 The final stage applies TOPSIS to rank workforce planning alternatives according to stakeholder-defined priorities.
 
-Scenarios will be evaluated using:
+| Rank | Scenario | TOPSIS Score |
+|---|---|---:|
+| 1 | Coverage-Oriented Strategy | 0.751 |
+| 2 | High-Investment Strategy | 0.701 |
+| 3 | Baseline Strategy | 0.500 |
+| 4 | Budget-Constrained Strategy | 0.299 |
 
-- Financial performance
-- Patient coverage
-- Operational robustness
-- Implementation feasibility
-- Workforce sustainability
+<img width="1068" height="465" alt="image" src="https://github.com/user-attachments/assets/22e04edc-faa0-49db-84ea-e338f52ca1a4" />
+
+**Interpretation**
+
+- The preferred strategy achieves the strongest balance between patient coverage, operational robustness, and workforce sustainability.
+- The High-Investment Strategy improves coverage capacity but is limited by lower implementation feasibility and financial efficiency.
+- The Budget-Constrained Strategy provides the highest financial efficiency but performs less favorably when broader organizational priorities are considered.
+
+The Coverage-Oriented Strategy is identified as the preferred workforce planning alternative. The results demonstrate that the most cost-efficient workforce allocation is not necessarily the most strategically desirable option.
 
 ---
 
@@ -328,48 +321,49 @@ Scenarios will be evaluated using:
 - Cost-minimizing solutions may not always represent the most strategically desirable workforce strategy.
 - Healthcare organizations must balance financial efficiency with patient safety and operational continuity.
 
-### Optimization + MCDA Integration
+**Optimization + MCDA Integration**
 
-- MILP identifies mathematically efficient and feasible workforce allocations.
-- MCDA incorporates organizational preferences and strategic priorities.
+- MILP optimization identifies feasible workforce allocations under operational and financial constraints.
+- Sensitivity analysis explores how strategic assumptions influence available workforce strategies.
+- AHP and TOPSIS incorporate stakeholder priorities to support transparent and multi-objective decision-making.
 
-Together, these methods provide a more complete decision-support framework.
+Together, these methods create an integrated decision-support framework that combines mathematical optimization with organizational judgment.
 
 ---
 
 ### Actionable Recommendations
 
-- Integrate forecasting outputs directly into future workforce optimization models.
-- Combine mathematical optimization with stakeholder-based decision frameworks.
-- Incorporate patient acuity, regulatory requirements, and clinical workload indicators in future models.
-- Develop stochastic optimization approaches linking demand uncertainty with workforce decisions.
-- Complete MCDA scenario ranking using TOPSIS methodology.
+- Integrate demand forecasting outputs directly into future workforce optimization models.
+- Combine mathematical optimization with stakeholder-based MCDA frameworks for strategic workforce decisions.
+- Incorporate additional healthcare-specific indicators such as patient acuity, regulatory staffing requirements, and clinical workload measures.
+- Extend the optimization framework toward stochastic or robust optimization to explicitly model demand uncertainty.
+- Apply recurring MCDA evaluations as workforce priorities evolve across clinical, operational, and financial dimensions.
 
 ---
 
 ### Project Structure
 
-### Notebook 1 – Hospital Operational Data Analysis
+**Notebook 1 – Hospital Operational Data Analysis**
 
 - Dataset exploration
 - Patient flow analysis
 - Operational indicator assessment
 
-### Notebook 2 – Operational Data Engineering & Demand Indicator Construction
+**Notebook 2 – Operational Data Engineering & Demand Indicator Construction**
 
 - Patient-level operational feature engineering
 - Temporal and shift-based demand characterization
 - Department-level and workload indicator construction
 - Operational dataset validation and modeling scope assessment
 
-### Notebook 3 – Patient Flow Demand Analysis
+**Notebook 3 – Patient Flow Demand Analysis**
 
 - Demand pattern analysis
 - Time series validation
 - Stationarity and autocorrelation analysis
 - Operational demand characterization
 
-### Notebook 4 – Nursing Workforce Planning Optimization
+**Notebook 4 – Nursing Workforce Planning Optimization**
 
 - Workforce capacity modeling
 - MILP optimization
@@ -377,34 +371,34 @@ Together, these methods provide a more complete decision-support framework.
 - Monte Carlo uncertainty analysis
 - Sensitivity analysis
 
-### Notebook 5 – Multi-Criteria Decision Analysis
+**Notebook 5 – Multi-Criteria Decision Analysis**
 
 - Stakeholder criteria definition
 - AHP weighting methodology
 - Consistency assessment
-- TOPSIS scenario ranking *(in progress)*
+- TOPSIS scenario ranking
 
 ---
 
 ### Key Takeaways
 
-### Operational Analytics
+**Operational Analytics**
 
 Transforms hospital demand information into structured workforce planning inputs.
 
-### Predictive Analytics
+**Predictive Analytics**
 
 Time series forecasting provides insights into future patient demand and operational uncertainty.
 
-### Optimization
+**Optimization**
 
 Identifies cost-effective nursing allocation strategies under workforce and budget constraints.
 
-### Risk Assessment
+**Risk Assessment**
 
 Evaluates how uncertainty and assumptions influence workforce decisions.
 
-### Strategic Decision Support
+**Strategic Decision Support**
 
 Combines optimization results with stakeholder preferences to support complex healthcare planning decisions.
 
