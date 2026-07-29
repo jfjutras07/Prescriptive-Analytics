@@ -37,3 +37,15 @@ For this prescriptive analytics project, I realized I need to better justify the
 The current model is technically sound, but I need to bridge the gap between complex optimization and field-level decision-making. Future iterations will focus on intuitive data storytelling and synthetic visuals to translate high-dimensional results into clear, accessible insights that empower non-technical stakeholders to make rapid and defensible humanitarian choices.
 
 ---
+
+### Project 3
+
+**Project Name**: Hospital Patient Flow Demand Analysis
+
+**Month**: July 2026
+
+**Link**: [Hospital Patient Flow Demand Analysis](https://github.com/jfjutras07/Prescriptive-Analytics/tree/main/Hospital_Patient_Flow_Demand_Analysis)
+
+**Weakness identified**:
+
+This project highlighted the importance of connecting optimization models with broader decision-making processes. While mathematical optimization can identify efficient workforce allocations, healthcare decisions involve multiple competing objectives such as patient coverage, operational resilience, financial efficiency, and implementation feasibility. Future iterations will focus on strengthening the integration between predictive analytics, uncertainty-aware optimization, and multi-criteria decision frameworks to produce more comprehensive and stakeholder-oriented recommendations.
